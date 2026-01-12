@@ -21,7 +21,7 @@ class ApplicantFactory extends Factory
             'contact_email' => $this->faker->safeEmail(),
             'message' => $this->faker->optional()->paragraph(),
             'location' => $this->faker->optional()->city(),
-            'resume_path' => 'resumes/demo.pdf', // za seed (kasnije pravi upload stvarno)
+            'resume_path' => 'resumes/demo.pdf', 
         ];
     }
 }
