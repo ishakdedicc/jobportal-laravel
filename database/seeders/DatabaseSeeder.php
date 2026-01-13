@@ -13,23 +13,14 @@ class DatabaseSeeder extends Seeder
 {
     use WithoutModelEvents;
 
-    /**
-     * Seed the application's database.
-     */
     public function run(): void
     {
-        User::factory(5)->create();
+        User::factory(20)->create();
 
-        Company::factory(5)->create();
+        Company::factory(20)->create();
 
-        Location::factory(5)->create();
-
-        Location::factory(5)->create();
+        Location::factory(20)->create();
 
         Job::factory(20)->create();
-
-        $this->call([
-            ApplicantSeeder::class,
-        ]);
     }
 }
